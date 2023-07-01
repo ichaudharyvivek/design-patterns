@@ -8,7 +8,6 @@ public class Apartment {
 	private boolean kitchen;
 
 	public Apartment(int sqm, int rooms, String city, String area, boolean kitchen) {
-		super();
 		this.sqm = sqm;
 		this.rooms = rooms;
 		this.city = city;
