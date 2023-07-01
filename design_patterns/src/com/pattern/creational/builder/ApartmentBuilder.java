@@ -32,6 +32,8 @@ public class ApartmentBuilder {
 		return this;
 	}
 
+	// After building the object with setters, 
+	// build method can be used to instantiate the object 
 	public Apartment build() {
 		Apartment ap = new Apartment(sqm, rooms, city, area, kitchen);
 		
