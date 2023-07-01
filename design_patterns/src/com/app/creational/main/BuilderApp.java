@@ -1,6 +1,7 @@
 package com.app.creational.main;
 
-import com.pattern.creational.builder.*;
+import com.pattern.creational.builder.Apartment;
+import com.pattern.creational.builder.ApartmentBuilder;
 
 public class BuilderApp {
 	public static void main(String[] args) {
