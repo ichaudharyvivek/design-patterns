@@ -7,4 +7,9 @@ public class MongoDB implements DatabaseClient {
 		return "MongoDB Database Initiated";
 	}
 
+	@Override
+	public void executeQuery() {
+		System.out.println("Executing query in MongoDB...");
+	}
+
 }

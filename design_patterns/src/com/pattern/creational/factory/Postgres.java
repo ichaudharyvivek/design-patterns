@@ -6,5 +6,10 @@ public class Postgres implements DatabaseClient {
 	public String getMetaData() {
 		return "Postgres Database Initiated";
 	}
+	
+	@Override
+	public void executeQuery() {
+		System.out.println("Executing query in Postgres...");
+	}
 
 }

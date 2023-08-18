@@ -6,5 +6,10 @@ public class MySQL implements DatabaseClient {
 	public String getMetaData() {
 		return "MySQL Database Initiated";
 	}
+	
+	@Override
+	public void executeQuery() {
+		System.out.println("Executing query in MySQL...");
+	}
 
 }
