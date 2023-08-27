@@ -8,11 +8,11 @@ public class FactoryApp {
 		DatabaseClient mongodb = DatabaseFactory.getClient("mongodb");
 		DatabaseClient mysql = DatabaseFactory.getClient("mysql");
 
-		mongodb.executeQuery();
-		mysql.executeQuery();
-
 		mongodb.getMetaData();
+		mongodb.executeQuery();
+
 		mysql.getMetaData();
+		mysql.executeQuery();
 
 	}
 }
