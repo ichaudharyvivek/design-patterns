@@ -11,8 +11,8 @@ public class FactoryApp {
 		mongodb.executeQuery();
 		mysql.executeQuery();
 
-		System.out.println(mongodb.getMetaData());
-		System.out.println(mysql.getMetaData());
+		mongodb.getMetaData();
+		mysql.getMetaData();
 
 	}
 }
