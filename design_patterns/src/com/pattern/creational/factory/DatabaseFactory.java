@@ -1,13 +1,9 @@
 package com.pattern.creational.factory;
 
 public class DatabaseFactory {
-	private static DatabaseClient typeOfInstance;
+	private DatabaseClient typeOfInstance;
 
-	private DatabaseFactory() {
-
-	}
-
-	public static DatabaseClient getClient(String dbname) {
+	public DatabaseClient getClient(String dbname) {
 		if (dbname == null)
 			return null;
 
