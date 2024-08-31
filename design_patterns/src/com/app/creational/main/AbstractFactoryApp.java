@@ -2,12 +2,8 @@ package com.app.creational.main;
 
 import java.util.Random;
 
-import com.pattern.creational.abstract_factory.app.Application;
-
-import com.pattern.creational.abstract_factory.factories.FurnitureFactory;
-import com.pattern.creational.abstract_factory.factories.ModernFurnitureFactory;
-import com.pattern.creational.abstract_factory.factories.ArtDecoFurnitureFactory;
-import com.pattern.creational.abstract_factory.factories.VictorianFurnitureFactory;
+import com.app.creational.pattern.abstract_factory.app.*;
+import com.app.creational.pattern.abstract_factory.factories.*;
 
 public class AbstractFactoryApp {
 	private static Application configureApplication() {

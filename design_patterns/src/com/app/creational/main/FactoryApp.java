@@ -1,6 +1,6 @@
 package com.app.creational.main;
 
-import com.pattern.creational.factory.*;
+import com.app.creational.pattern.factory.*;
 
 public class FactoryApp {
 	public static void main(String[] args) {

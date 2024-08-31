@@ -1,6 +1,6 @@
 package com.app.structural.main;
 
-import com.pattern.structural.adapter.AdapterTest;
+import com.app.structural.pattern.adapter.AdapterTest;
 
 public class AdapterApp {
 	public static void main(String[] args) {
