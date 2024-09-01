@@ -1,4 +1,4 @@
-package com.app.creational.pattern.factory;
+package com.app.creational.pattern.factory.idiom;
 
 public interface DatabaseClient {
 	public void getMetaData();

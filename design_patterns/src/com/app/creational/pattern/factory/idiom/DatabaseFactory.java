@@ -1,4 +1,4 @@
-package com.app.creational.pattern.factory;
+package com.app.creational.pattern.factory.idiom;
 
 public class DatabaseFactory {
 	private DatabaseClient typeOfInstance;
