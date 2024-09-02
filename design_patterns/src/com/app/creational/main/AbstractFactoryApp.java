@@ -3,7 +3,10 @@ package com.app.creational.main;
 import java.util.Random;
 
 import com.app.creational.pattern.abstract_factory.app.*;
+import com.app.creational.pattern.abstract_factory.chair.Chair;
 import com.app.creational.pattern.abstract_factory.factories.*;
+import com.app.creational.pattern.abstract_factory.sofa.Sofa;
+import com.app.creational.pattern.abstract_factory.table.Table;
 
 public class AbstractFactoryApp {
 	private static Application configureApplication() {
@@ -32,9 +35,19 @@ public class AbstractFactoryApp {
 	}
 
 	public static void main(String[] args) {
-		Application app = configureApplication();
-
 		// Execute app:Application methods
+		Application app = configureApplication();
 		app.createFurniture();
+
+		// Or run independently
+		System.out.println("\n");
+		FurnitureFactory f = new ArtDecoFurnitureFactory();
+		Chair fc = f.createChair();
+		Sofa fs = f.createSofa();
+		Table ft = f.createTable();
+
+		fc.watch();
+		fs.relax();
+		ft.eat();
 	}
 }
