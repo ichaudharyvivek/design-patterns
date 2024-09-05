@@ -3,7 +3,8 @@ package com.app.creational.main;
 import com.app.creational.pattern.prototype.*;
 
 public class PrototypeApp {
-	public static void main(String[] args) throws InterruptedException {
+
+	public static void NetworkExample() throws InterruptedException {
 		NetworkConnection nc = new NetworkConnection();
 		NetworkConnection cnc = null;
 
@@ -20,5 +21,13 @@ public class PrototypeApp {
 		} catch (CloneNotSupportedException ex) {
 			ex.printStackTrace();
 		}
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		Car bmwCar = new Car("BMW", "Black", "3XO", 4, 250);
+		System.out.println(bmwCar.toString());
+
+		Car newBmwCar = (Car) bmwCar.clone();
+		System.out.println(newBmwCar.toString());
 	}
 }
